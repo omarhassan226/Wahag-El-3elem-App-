@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+.abcenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3c7098;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3c7098;
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3c7098;
+  border-radius: 20px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #3c7098;
+}
+.slick-a/* CourseSlider.css */
+.course-slider {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures items are in a row */
+}
+
+.slick-arrow {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #333;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev {
+  left: 10px; /* Adjust as needed */
+}
+
+.slick-next {
+  right: 10px; /* Adjust as needed */
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  border: none;
+  background-color: transparent;
+  color: #333;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+  font-weight: bold;
+}
